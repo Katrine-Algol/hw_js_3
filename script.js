@@ -309,6 +309,42 @@ d. меняет порядок цифр числа n на обратный.
 {
     console.log(`----------------------------- Задание 10 ----------------------------- `);
 
+    let n = prompt(`Введите произвольное целое число`, `5678`);
+    let column = 0;
+    let sum = 0;
+    let inverterNumber = ` `;
+    let counter = 0;
+
+    for (i = 0; ; i++) {
+        if (n[i] == undefined) break;
+
+        column = n[i];
+        counter++;
+        sum += +n[i];
+        inverterNumber = n[i] + inverterNumber;
+        
+        console.log(column);
+        
+    }
+    console.log(`Счетчик цифр в числе n = ` + counter);
+    console.log(`Сумма цифр числа n = ` + sum);
+    console.log(`Обратный порядок цифр числа n = ` + inverterNumber);
+    
+
+    
+
+    console.log(`--------------------`);
+
+    let a = `#####`;
+    let triangle = ` `;
+    for(i = 0; i <= 5; i++) {
+        if (a[i] == undefined) break;
+        triangle = a[i] + triangle;
+
+        console.log(triangle);
+      
+    }
+
 }
 
 /*
